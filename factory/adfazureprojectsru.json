@@ -1,0 +1,15 @@
+{
+	"name": "adfazureprojectsru",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8d130bea-040f-4f53-9ada-b5703f8e1b2e",
+		"tenantId": "2562b7a2-198c-4ece-bd60-56e97822b469"
+	}
+}
