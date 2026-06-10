@@ -1,0 +1,199 @@
+{
+  "__locations": {
+    "files": [
+      "databricks.yml",
+      "resources/spotify_dab_etl.pipeline.yml"
+    ],
+    "locations": {
+      "bundle": [
+        [
+          0,
+          4,
+          3
+        ]
+      ],
+      "include": [
+        [
+          0,
+          8,
+          3
+        ]
+      ],
+      "permissions": [
+        [
+          0,
+          40,
+          7
+        ]
+      ],
+      "resources": [
+        [
+          1,
+          5,
+          3
+        ]
+      ],
+      "resources.pipelines": [
+        [
+          1,
+          6,
+          5
+        ]
+      ],
+      "resources.pipelines.pipeline_gold_pipeline": [
+        [
+          1,
+          7,
+          7
+        ]
+      ],
+      "variables": [
+        [
+          0,
+          12,
+          3
+        ]
+      ],
+      "workspace": [
+        [
+          0,
+          33,
+          7
+        ]
+      ]
+    },
+    "version": 1
+  },
+  "bundle": {
+    "environment": "prod",
+    "git": {
+      "actual_branch": "main",
+      "branch": "main",
+      "bundle_root_path": "spotify_dab/spotify_dab",
+      "commit": "602778e43f443618143b9e129c94b88aa7bfe84a",
+      "origin_url": "https://github.com/sruthijayakumarusa-lgtm/azureproject"
+    },
+    "mode": "production",
+    "name": "spotify_dab",
+    "target": "prod",
+    "uuid": "027aa964-bbd1-4f3d-a5b7-075020275f21"
+  },
+  "include": [
+    "resources/spotify_dab_etl.pipeline.yml"
+  ],
+  "permissions": [
+    {
+      "level": "CAN_MANAGE",
+      "user_name": "jayakumar.sruthi95_gmail.com#ext#@jayakumarsruthi95gmail.onmicrosoft.com"
+    }
+  ],
+  "resources": {
+    "pipelines": {
+      "pipeline_gold_pipeline": {
+        "catalog": "spotify_cata",
+        "channel": "CURRENT",
+        "deployment": {
+          "kind": "BUNDLE",
+          "metadata_file_path": "/Workspace/PROD/.bundle/spotify_dab/prod/state/metadata.json"
+        },
+        "edition": "ADVANCED",
+        "id": "e31d11fd-e8cb-410f-b802-e6f5700537b5",
+        "libraries": [
+          {
+            "glob": {
+              "include": "/Workspace/PROD/.bundle/spotify_dab/prod/files/src/gold/dlt/transformations/**"
+            }
+          }
+        ],
+        "name": "gold_pipeline",
+        "permissions": [
+          {
+            "level": "CAN_MANAGE",
+            "user_name": "jayakumar.sruthi95_gmail.com#ext#@jayakumarsruthi95gmail.onmicrosoft.com"
+          },
+          {
+            "level": "IS_OWNER",
+            "user_name": "jayakumar.sruthi95@gmail.com"
+          }
+        ],
+        "photon": true,
+        "root_path": "/Workspace/PROD/.bundle/spotify_dab/prod/files/src/gold/dlt",
+        "schema": "gold",
+        "serverless": true,
+        "url": "https://adb-7405610105783889.9.azuredatabricks.net/pipelines/e31d11fd-e8cb-410f-b802-e6f5700537b5"
+      }
+    }
+  },
+  "sync": {
+    "paths": [
+      "."
+    ]
+  },
+  "variables": {
+    "catalog": {
+      "default": "no",
+      "description": "The catalog to use",
+      "value": "no"
+    },
+    "schema": {
+      "default": "prod",
+      "description": "The schema to use",
+      "value": "prod"
+    }
+  },
+  "workspace": {
+    "artifact_path": "/Workspace/PROD/.bundle/spotify_dab/prod/artifacts",
+    "current_user": {
+      "active": true,
+      "displayName": "sruthi jayakumar",
+      "domain_friendly_name": "jayakumar-sruthi95",
+      "emails": [
+        {
+          "primary": true,
+          "type": "work",
+          "value": "jayakumar.sruthi95@gmail.com"
+        }
+      ],
+      "entitlements": [
+        {
+          "value": "allow-cluster-create"
+        },
+        {
+          "value": "allow-instance-pool-create"
+        }
+      ],
+      "externalId": "cd56eafc-79ec-445f-b534-95f11372f9de",
+      "groups": [
+        {
+          "$ref": "Groups/150549529047402",
+          "display": "users",
+          "type": "direct",
+          "value": "150549529047402"
+        },
+        {
+          "$ref": "Groups/151364859821624",
+          "display": "admins",
+          "type": "direct",
+          "value": "151364859821624"
+        }
+      ],
+      "id": "146304357298339",
+      "name": {
+        "familyName": "jayakumar",
+        "givenName": "sruthi"
+      },
+      "schemas": [
+        "urn:ietf:params:scim:schemas:core:2.0:User",
+        "urn:ietf:params:scim:schemas:extension:workspace:2.0:User"
+      ],
+      "short_name": "jayakumar_sruthi95",
+      "userName": "jayakumar.sruthi95@gmail.com"
+    },
+    "file_path": "/Workspace/PROD/.bundle/spotify_dab/prod/files",
+    "host": "https://adb-7405610105783889.9.azuredatabricks.net",
+    "profile": "workspace_profile",
+    "resource_path": "/Workspace/PROD/.bundle/spotify_dab/prod/resources",
+    "root_path": "/Workspace/PROD/.bundle/spotify_dab/prod",
+    "state_path": "/Workspace/PROD/.bundle/spotify_dab/prod/state"
+  }
+}

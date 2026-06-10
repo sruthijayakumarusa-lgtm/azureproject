@@ -1,0 +1,36 @@
+{
+ "state_version": 2,
+ "cli_version": "1.1.0",
+ "lineage": "2cdd599c-8f82-4f15-a70d-16b7d4f009a4",
+ "serial": 1,
+ "state": {
+  "resources.pipelines.pipeline_gold_pipeline": {
+   "__id__": "1ce1dc4d-eef9-42e1-9b27-777b93f908a0",
+   "state": {
+    "catalog": "spotify_cata",
+    "channel": "CURRENT",
+    "deployment": {
+     "kind": "BUNDLE",
+     "metadata_file_path": "/Workspace/Users/jayakumar.sruthi95@gmail.com/.bundle/spotify_dab/dev/state/metadata.json"
+    },
+    "development": true,
+    "edition": "ADVANCED",
+    "libraries": [
+     {
+      "glob": {
+       "include": "/Workspace/Users/jayakumar.sruthi95@gmail.com/azureproject/spotify_dab/spotify_dab/src/gold/dlt/transformations/**"
+      }
+     }
+    ],
+    "name": "[dev jayakumar_sruthi95] gold_pipeline",
+    "photon": true,
+    "root_path": "/Workspace/Users/jayakumar.sruthi95@gmail.com/azureproject/spotify_dab/spotify_dab/src/gold/dlt",
+    "schema": "gold",
+    "serverless": true,
+    "tags": {
+     "dev": "jayakumar_sruthi95"
+    }
+   }
+  }
+ }
+}

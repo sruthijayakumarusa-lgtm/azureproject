@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "config": {
+    "bundle": {
+      "name": "spotify_dab",
+      "target": "dev",
+      "mode": "development",
+      "git": {
+        "branch": "main",
+        "origin_url": "https://github.com/sruthijayakumarusa-lgtm/azureproject",
+        "commit": "088b4729c793a3bd9390569e3cca7dcb8b079866",
+        "bundle_root_path": "spotify_dab/spotify_dab"
+      }
+    },
+    "workspace": {
+      "file_path": "/Workspace/Users/jayakumar.sruthi95@gmail.com/azureproject/spotify_dab/spotify_dab"
+    },
+    "resources": {
+      "pipelines": {
+        "pipeline_gold_pipeline": {
+          "id": "1ce1dc4d-eef9-42e1-9b27-777b93f908a0",
+          "relative_path": "resources/spotify_dab_etl.pipeline.yml"
+        }
+      }
+    },
+    "presets": {
+      "source_linked_deployment": true
+    }
+  },
+  "extra": {
+    "git_folder_path": "/Workspace/Users/jayakumar.sruthi95@gmail.com/azureproject"
+  }
+}
